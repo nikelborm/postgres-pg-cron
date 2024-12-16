@@ -1,15 +1,15 @@
 services:
   postgres:
-    image: cleisonfmelo/postgres-pg-cron:latest
+    image: nikelborm/postgres-pg-cron:latest
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres         
+      POSTGRES_DB: postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    
+
 volumes:
   pgdata:

@@ -1,4 +1,4 @@
-FROM postgres:16-bookworm
+FROM postgres:17-bookworm
 
 ARG POSTGRES_DB=postgres
 
@@ -7,7 +7,7 @@ RUN echo "POSTGRES_DB: $POSTGRES_DB"
 ENV POSTGRES_DB=${POSTGRES_DB}
 
 RUN apt-get update && \
-  apt-get -y install postgresql-16-cron && \
+  apt-get -y install postgresql-17-cron && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
