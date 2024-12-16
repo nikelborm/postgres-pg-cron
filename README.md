@@ -22,7 +22,7 @@ To run this image using Docker Compose, use the following configuration:
 ```yaml
 services:
   postgres:
-    image: cleisonfmelo/postgres-pg-cron:latest
+    image: nikelborm/postgres-pg-cron:latest
     restart: always
     environment:
       POSTGRES_USER: postgres
